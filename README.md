@@ -1,18 +1,20 @@
 # Twitter_Sentiment_Canada_Election
-Prediction of Canada presidential election result using machine learning techniques, data categorization, and sentimental analysis on twitter data
+Prediction of Canadian presidential election result using machine learning techniques, data categorization, and sentimental analysis on Twitter data
 
 
-Problem Statement:
-The prediction of elections has been an area of interest for political scientists, data analysts, and social media experts. In recent years, social media platforms like Twitter have become a rich source of data for understanding public opinion and sentiment toward political parties and candidates. In this study, we aim to predict the overall outcome of the 2015 Canadian federal election based on the sentiment of the tweets. This can only be done by properly categorizing the tweets based on the political party that they are talking about. Thus, we aim to first provide a machine learning-based technique to predict the category of each tweet based on the top three political parties of Canada (Liberal, Conservative, NDP) and estimate the public opinion from the sentimental analysis of the data for each political party. The party with the most positive sentiment shall get the most seats in the parliament of Canada.
+# Problem Statement:
+The prediction of elections has been an area of interest for political scientists, data analysts, and social media experts. In recent years, social media platforms like Twitter have become a rich data source for understanding public opinion and sentiment toward political parties and candidates. In this study, we aim to predict the overall outcome of the 2015 Canadian federal election based on the sentiment of the tweets. This can only be done by properly categorizing the tweets based on the political party that they are talking about. Thus, we aim first to provide a machine learning-based technique to predict the category of each tweet based on the top three political parties of Canada (Liberal, Conservative, NDP) and estimate the public opinion from the sentimental analysis of the data for each political party. The party with the most positive sentiment shall get the most seats in the Parliament of Canada.
 Background:
 Twitter has over 300 million active users, and the platform generates over 500 million tweets per day. With such a vast amount of data, it is possible to analyze the sentiment of the tweets toward a particular political party or candidate. By analyzing the tweets' sentiment, we can determine the public's opinion towards a political party or candidate, which can help us predict their chances of winning the election.
-In this study, we collect about 250 thousand Twitter data related to the 2015 Canadian federal election with the official election hashtag #elxn42, which was posted on Twitter during and after the campaign period (about 100 days). It is critical to be able to categorize and label the tweets based on the purpose of the research . As the goal of this research is to predict the overall outcome of the election and the most-desirable political party, we use machine learning algorithms and natural language processing (NLP) techniques to perform data labeling (to measure which tweet is talking about which political party) and sentimental analysis on the tweets to get the public opinion. This topic is important and can be helpful for the following reasons :
-•	Social media analysis is a new field that can provide insights into public opinion and sentiment.
-•	Findings can have practical implications for political campaigns by helping them develop more effective social media strategies.
-•	Applying machine learning to real-world data can help develop more accurate models for predicting election outcomes.
-Dataset Detail:
+In this study, we collect about 250 thousand Twitter data related to the 2015 Canadian federal election with the official election hashtag #elxn42, which was posted on Twitter during and after the campaign period (about 100 days). It is critical to be able to categorize and label the tweets based on the purpose of the research. As the goal of this research is to predict the overall outcome of the election and the most-desirable political party, we use machine learning algorithms and natural language processing (NLP) techniques to perform data labeling (to measure which tweet is talking about which political party) and sentimental analysis on the tweets to get the public opinion. This topic is important and can be helpful for the following reasons :
+* Social media analysis is a new field that can provide insights into public opinion and sentiment.
+* Findings can have practical implications for political campaigns by helping them develop more effective social media strategies.
+* Applying machine learning to real-world data can help develop more accurate models for predicting election outcomes.
+
+# Dataset Detail:
 The dataset for this project containing about 250 thousand rows of raw data is collected through the official Application Programming Interface (API) of Twitter. The list of all tweet IDs for the 42nd Federal election of Canada with the official hashtag was provided on the Canadian Dataverse Repository  website. About tweets were randomly selected from the list of IDs. The model for data labeling is only trained on the 42nd Federal election dataset.
 The same information has also been collected for the 43rd Federal election as another test dataset to see if the model can still provide correct overall public opinion on another Federal election campaign.
+
  
 Figure 1. Overall pipeline of 2015 Canada Federal election result prediction
 
