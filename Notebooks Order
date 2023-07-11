@@ -1,0 +1,6 @@
+Notebooks Order:
+1. "Twitter_API_Data_Extraction.ipynb" is the first notethat should be run and is for the purpose of extracting data from Twitter API
+2. "Parties_labels_definition.ipynb" is for processing another dataset for labeling and categorizing the tweets
+3. "Data_Cleaning_and_labeling.ipynb" this note should be run after step 1 and 2 and the process of Data labeling and tweet categorization is done in it.
+4. "Sentimental_Analysis_Transformer_RoBERTa.ipynb" this notebook should be run after Step 3 and it is for the purpose of sentimental analysis only
+5. "Visualizations.ipynb" is should be run at the end and it contains all the visualizations
