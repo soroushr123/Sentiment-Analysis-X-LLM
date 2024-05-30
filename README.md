@@ -1,4 +1,4 @@
-# Twitter_Sentiment_Canada_Election
+# Sentimental Analysis and Data Labeling using LLM and Machine Learning Techniques on X posts to predict the Canada election outcome
 Prediction of Canadian presidential election result using machine learning techniques for data labeling, and sentimental analysis on Twitter data
 
 <p align="center">
