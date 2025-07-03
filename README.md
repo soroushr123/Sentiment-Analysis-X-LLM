@@ -21,11 +21,13 @@ Below is the chart illustrating the process:
 <p align="center"> Figure 1. Overall pipeline of 2015 Canada Federal election result prediction </p>
 
 ## 2. Tech Stack
-- Python
-- NLTK
-- Statistics
-- LLM
-- Visualization Tools
+- **Language & Environment:** Python in Jupyter notebooks.
+- **Data Tools:** pandas and numpy for data handling, along with json and regex utilities.
+- **NLP Libraries:** NLTK for tokenization and stemming, Hugging Face Transformers (with PyTorch) for the RoBERTa model, and VADER for rule-based sentiment.
+- **Machine Learning:** scikit-learn for train-test splitting and feature extraction.
+- **Visualization:** matplotlib, seaborn, and wordcloud for charts and word clouds.
+- **Twitter API Access:** Tweepy for data collection.
+- **Misc:** tqdm progress bars, ipywidgets widgets, and general Python modules for data wrangling and analysis.
 
 ## 3. Modeling:
 To label and categorize the tweets based on the political parties, we come up with a semi-supervised  learning solution mixed. Generally speaking, we use the name of all the parliament members of Canada and check the whole tweet text in the dataset to see which row contains which parliament member name. The idea is if a tweet contains a name, then that tweet is talking about that political party (e.g. containing Justin Trudeau, the tweet is talking about liberals) By this way, about 50K of tweets were labeled. Then we used these amounts to train an ensemble learning model to contain three separate classification models (Figure 1) to predict the label and category for the rest of the data. The trained model will be used for future analysis, of the datasets from other Federal elections of Canada (e.g. 43rd Federal election tweet data).
